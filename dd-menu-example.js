@@ -4,7 +4,7 @@ https://css-tricks.com/solved-with-css-dropdown-menus/
 //  HTML  //
 ////////////
 
-<nav role="navigation">
+<div className="wrapper">
   <ul>
     <li><a href="#">One</a></li>
     <li><a href="#">Two</a>
@@ -16,7 +16,7 @@ https://css-tricks.com/solved-with-css-dropdown-menus/
     </li>
     <li><a href="#">Three</a></li>
   </ul>
-</nav>
+</div>
 
 
 
@@ -40,34 +40,34 @@ ul {
 }
 
 li {
-    color: #fff;
+  color: #fff;
   background: darkorange;
-    display: block;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    text-decoration: none;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
   transition-duration: 0.5s;
 }
-  
+
 li a {
   color: #fff;
 }
 
 li:hover {
-    background: red;
-    cursor: pointer;
+  background: red;
+  cursor: pointer;
 }
 
 ul li ul {
-    background: orange;
-    visibility: hidden;
+  background: orange;
+  visibility: hidden;
   opacity: 0;
   min-width: 5rem;
-    position: absolute;
+  position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
-    left: 0;
+  left: 0;
   display: none;
 }
 
